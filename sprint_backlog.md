@@ -6,7 +6,7 @@
 
 Éléments du Product Backlog sélectionnés pour ce Sprint :
 Créer la structure de base du jeu en console
-Tâche 1 : Mettre en place l'environnement de développement
+~~Tâche 1 : Mettre en place l'environnement de développement
 Tâche 2 : Créer la boucle principale du jeu
 
 Implémenter la création de deux équipes avec jusqu'à 10 personnages chacune
