@@ -1,7 +1,7 @@
 # 📑Sprint Backlog
 
 ### 💻 Éléments du Product Backlog sélectionnés pour ce Sprint :
-
+```
 Implémentation du système d'HP basé sur l'endurance
 Tâche 1 : Ajouter un attribut d'endurance à la classe Personnage
 Tâche 2 : Développer une formule pour calculer les HP initiaux basés sur l'endurance
@@ -21,7 +21,7 @@ Critères de Validation :
 Chaque personnage a des HP initiaux différents basés sur son endurance
 Les HP de tous les personnages sont visibles après chaque action du jeu
 Aucun personnage ne peut avoir des HP négatifs à aucun moment du jeu
-
+```
 
 ## 🎬 Plan d'action :
 - Commencer par implémenter le système d'HP basé sur l'endurance
