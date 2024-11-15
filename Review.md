@@ -11,4 +11,7 @@ Sprint Goal:
 -Attaques aléatoires
 -Ordre d’attaque basé sur la vitesse 
 
+Développement:
+Création de la class personnage
+
 
