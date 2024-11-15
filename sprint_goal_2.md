@@ -1,5 +1,6 @@
-# 🎮 Sprint Goal 2:
+# 🎮 **Sprint Goal** : 
 
-`
- Améliorer le prototype du RPG en console en intégrant un système de combat plus détaillé et configurable. Ce sprint se concentrera sur l'affichage des HP à chaque étape, l'ajout d'un attribut de force pour influencer les dégâts, la diversification des HP initiaux basés sur l'endurance, l'implémentation d'un nouveau système de ciblage, et l'utilisation d'un système de dés pour les actions aléatoires. De plus, nous préparerons le terrain pour supporter plus de deux équipes.
- `
+Améliorer le système de gestion des points de vie (HP) du RPG en console en intégrant un facteur d'endurance pour déterminer les HP initiaux des personnages. 
+
+Assurer un affichage constant des HP à chaque étape du jeu et empêcher que les HP descendent en dessous de zéro.
+ 
