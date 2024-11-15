@@ -5,9 +5,16 @@ class Character:
         self.name = name
         self.hp = 100
         self.speed = speed
+        # self.stamina = random.randint(1, 2)
 
     def is_alive(self):
         return self.hp > 0
+    
+    def is_dead(self):
+        if self.hp <= 0:
+            self.hp == 0
+            return True
+        return False
 
     def __str__(self):
         return f"{self.name} (HP: {self.hp}, Speed: {self.speed})"
@@ -40,15 +47,29 @@ def battle_turn(attacker, target):
 
     if critical_hit:
         damage = 20
-        result = f"💥 Critical hit! {attacker.name} deals {damage} damage to {target.name}!"
+        result = f"💥 Critical hit! {attacker.name} deals {damage} damage to {target.name}! \n{target.name} have {target.hp} hp"
     elif fumble:
         damage = -10
-        result = f"😱 Fumble! {attacker.name} accidentally deals {abs(damage)} damage to themselves!"
+        result = f"😱 Fumble! {attacker.name} accidentally deals {abs(damage)} damage to themselves! \n{target.name} have {target.hp} hp"
         attacker.hp += damage
     else:
-        result = f"{attacker.name} attacks {target.name} for {damage} damage!"
+        result = f"{attacker.name} attacks {target.name} for {damage} damage! \n{target.name} have {target.hp} hp"
 
     target.hp -= max(0, damage)
+    if (target.hp<=0):
+        target.hp = 0
+
+
+    # if (target.is_dead() == False):
+    #     target.hp -= max(0, damage)
+    # else:
+    #     target.hp = 0
+    
+
+
+
+
+
     return result
 
 def play_game(team1, team2):
