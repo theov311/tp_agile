@@ -1,10 +1,10 @@
-```md
-# Sprint Backlog (MVP)
+
+# Sprint Backlog (MVP) 📑
 
 
 🎮 ` Sprint Goal : Créer un prototype fonctionnel d'un RPG en console avec les mécaniques de base de combat pour deux équipes s'affrontant selon des règles prédéfinies.`
 
-Éléments du Product Backlog sélectionnés pour ce Sprint :
+### Éléments du Product Backlog sélectionnés pour ce Sprint :
 
 - Créer la structure de base du jeu en console
 
@@ -22,4 +22,3 @@
 
 - Afficher les résultats de chaque tour et l'état du jeu
 
-```
