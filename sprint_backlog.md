@@ -1,5 +1,5 @@
 ```md
-# Sprint Backlog
+# Sprint Backlog (MVP)
 
 
 🎮 Sprint Goal : Créer un prototype fonctionnel d'un RPG en console avec les mécaniques de base de combat pour deux équipes s'affrontant selon des règles prédéfinies.
