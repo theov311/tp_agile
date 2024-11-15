@@ -6,16 +6,16 @@
 
 Éléments du Product Backlog sélectionnés pour ce Sprint :
 Créer la structure de base du jeu en console
-Tâche 1 : Mettre en place l'environnement de développement X
-Tâche 2 : Créer la boucle principale du jeu X
+Tâche 1 : Mettre en place l'environnement de développement
+Tâche 2 : Créer la boucle principale du jeu
 
 Implémenter la création de deux équipes avec jusqu'à 10 personnages chacune
-Tâche 1 : Développer la classe Personnage X
-Tâche 2 : Créer la fonction de génération d'équipes X
+Tâche 1 : Développer la classe Personnage
+Tâche 2 : Créer la fonction de génération d'équipes
 
 Attribuer 100 HP à chaque personnage au début de la partie
-Tâche 1 : Ajouter l'attribut HP à la classe Personnage X
-Tâche 2 : Initialiser les HP lors de la création des personnages X
+Tâche 1 : Ajouter l'attribut HP à la classe Personnage
+Tâche 2 : Initialiser les HP lors de la création des personnages
 
 Implémenter le système de tour par tour basé sur le score de vitesse
 Tâche 1 : Ajouter l'attribut vitesse aux personnages 
