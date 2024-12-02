@@ -11,7 +11,6 @@ class Character:
         self.name = name
         self.speed = speed
         self.stamina_type = stamina_type
-        self.stamina_type = stamina_type
         self.hp = 100+(self.stamina_type*10)
         self.max_hp = self.hp
 
