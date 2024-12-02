@@ -10,9 +10,10 @@ class Character:
     def is_alive(self):
         return self.hp > 0
     
+    #######
     def is_dead(self):
         if self.hp <= 0:
-            self.hp == 0
+            self.hp = 0  # Utiliser '=' au lieu de '=='
             return True
         return False
 
@@ -47,29 +48,20 @@ def battle_turn(attacker, target):
 
     if critical_hit:
         damage = 20
-        result = f"💥 Critical hit! {attacker.name} deals {damage} damage to {target.name}! \n{target.name} have {target.hp} hp"
+        target.hp -= damage
+        result = f"💥 Critical hit! {attacker.name} deals {damage} damage to {target.name}!"
     elif fumble:
-        damage = -10
-        result = f"😱 Fumble! {attacker.name} accidentally deals {abs(damage)} damage to themselves! \n{target.name} have {target.hp} hp"
-        attacker.hp += damage
+        damage = 10  # Changé de -10 à 10 pour cohérence
+        attacker.hp -= damage
+        result = f"😱 Fumble! {attacker.name} accidentally deals {damage} damage to themselves!"
     else:
-        result = f"{attacker.name} attacks {target.name} for {damage} damage! \n{target.name} have {target.hp} hp"
+        target.hp -= damage
+        result = f"{attacker.name} attacks {target.name} for {damage} damage!"
 
-    target.hp -= max(0, damage)
-    if (target.hp<=0):
-        target.hp = 0
+    target.hp = max(0, target.hp)  # Assure que HP ne descend pas en dessous de 0
+    attacker.hp = max(0, attacker.hp)  # Idem pour l'attaquant en cas de fumble
 
-
-    # if (target.is_dead() == False):
-    #     target.hp -= max(0, damage)
-    # else:
-    #     target.hp = 0
-    
-
-
-
-
-
+    result += f"\n{target.name} now has {target.hp} HP"
     return result
 
 def play_game(team1, team2):
@@ -114,17 +106,19 @@ def play_game(team1, team2):
 
     return log, rounds
 
-# Main Program
 if __name__ == "__main__":
     print("Welcome to the RPG Battle Simulator!")
-    team1 = create_team("Team1", size=3)  # Taille d'équipe ajustable
+    team1 = create_team("Team1", size=3)
     team2 = create_team("Team2", size=3)
 
     display_teams(team1, team2)
     log, total_rounds = play_game(team1, team2)
 
-    # Afficher le résumé du combat
+    # Afficher le résumé du combat une seule fois
     print("\n".join(log))
     print(f"\nTotal Turns: {total_rounds}")
     print("\nFinal Teams State:")
     display_teams(team1, team2)
+    
+    # Ajoutez cette ligne pour marquer la fin du programme
+    print("\n--- End of Simulation ---")
