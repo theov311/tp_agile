@@ -5,21 +5,19 @@ class Character:
         self.name = name
         self.hp = 100
         self.speed = speed
-        # self.stamina = random.randint(1, 2)
 
     def is_alive(self):
         return self.hp > 0
-    
-    #######
+
     def is_dead(self):
         if self.hp <= 0:
-            self.hp = 0  # Utiliser '=' au lieu de '=='
+            self.hp = 0 
             return True
         return False
 
     def __str__(self):
-        return f"{self.name} (HP: {self.hp}, Speed: {self.speed})"
-
+        hp_display = "is dead" if self.hp == 0 else f"HP: {self.hp}"
+        return f"{self.name} ({hp_display}, Speed: {self.speed})"
 
 
 def create_team(team_name, size):
@@ -51,17 +49,20 @@ def battle_turn(attacker, target):
         target.hp -= damage
         result = f"💥 Critical hit! {attacker.name} deals {damage} damage to {target.name}!"
     elif fumble:
-        damage = 10  # Changé de -10 à 10 pour cohérence
+        damage = 10
         attacker.hp -= damage
         result = f"😱 Fumble! {attacker.name} accidentally deals {damage} damage to themselves!"
     else:
         target.hp -= damage
         result = f"{attacker.name} attacks {target.name} for {damage} damage!"
 
-    target.hp = max(0, target.hp)  # Assure que HP ne descend pas en dessous de 0
-    attacker.hp = max(0, attacker.hp)  # Idem pour l'attaquant en cas de fumble
+    target.hp = max(0, target.hp)
+    attacker.hp = max(0, attacker.hp)
 
-    result += f"\n{target.name} now has {target.hp} HP"
+    if target.is_dead() or attacker.is_dead(): 
+        result += f"\n💀 {target.name} is dead!"
+
+    result += f"\n{target.name} now has: {target.hp} HP" if target.is_alive() else ""
     return result
 
 def play_game(team1, team2):
@@ -69,31 +70,27 @@ def play_game(team1, team2):
     log = []
     rounds = 0
 
-    # Liste des personnages triée par vitesse décroissante
     all_characters = sorted(team1 + team2, key=lambda c: c.speed, reverse=True)
 
     while any(char.is_alive() for char in team1) and any(char.is_alive() for char in team2):
         rounds += 1
         log.append(f"\n--- Turn {rounds} ---")
 
-        # Sélectionner le prochain attaquant
         attacker = next((char for char in all_characters if char.is_alive()), None)
         if attacker is None:
-            break  # Tous les personnages sont morts
+            break
 
-        # Déterminer la cible
         target_team = team2 if attacker in team1 else team1
         alive_targets = [char for char in target_team if char.is_alive()]
         if not alive_targets:
-            break  # Pas de cibles restantes dans l'équipe adverse
+            break
+
         target = random.choice(alive_targets)
 
-        # Résoudre l'attaque
         result = battle_turn(attacker, target)
         if result:
             log.append(result)
 
-        # Vérifier si une équipe a perdu
         if not any(char.is_alive() for char in team1):
             log.append("\n--- Team 2 Wins! ---")
             return log, rounds
@@ -101,7 +98,6 @@ def play_game(team1, team2):
             log.append("\n--- Team 1 Wins! ---")
             return log, rounds
 
-        # Réorganiser la liste pour que le prochain joueur attaque
         all_characters = all_characters[1:] + [all_characters[0]]
 
     return log, rounds
@@ -114,11 +110,7 @@ if __name__ == "__main__":
     display_teams(team1, team2)
     log, total_rounds = play_game(team1, team2)
 
-    # Afficher le résumé du combat une seule fois
     print("\n".join(log))
     print(f"\nTotal Turns: {total_rounds}")
     print("\nFinal Teams State:")
     display_teams(team1, team2)
-    
-    # Ajoutez cette ligne pour marquer la fin du programme
-    print("\n--- End of Simulation ---")
