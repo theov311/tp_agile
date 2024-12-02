@@ -20,7 +20,8 @@ Tests et équilibrage
 
 ### Critères de Validation 🍮:
 
+`
 -Les personnages peuvent dépasser 100 HP sans problème
 -Le système de tank fonctionne de manière équilibrée et ajoute de la profondeur stratégique au jeu
 -Le code est propre, bien commenté et suit un style cohérent
--Toutes les fonctionnalités existantes et nouvelles fonctionnent correctement ensemble
+-Toutes les fonctionnalités existantes et nouvelles fonctionnent correctement ensemble`
