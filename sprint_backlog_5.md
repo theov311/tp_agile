@@ -1,5 +1,6 @@
 # Sprint Backlog 🤚
 
+```md
 ### Implémentation du dépassement des 100 HP
 - Modifier la logique pour permettre aux personnages d'avoir plus de 100 HP
 - Ajuster l'affichage pour représenter correctement les HP au-delà de 100
@@ -20,6 +21,7 @@
 - Effectuer des tests approfondis sur les nouvelles fonctionnalités et les ajustements
 - Vérifier que les changements n'ont pas introduit de nouveaux bugs
 - Ajuster les valeurs si nécessaire pour maintenir l'équilibre du jeu
+```
 
 ## Critères de Validation 🍮:
 
