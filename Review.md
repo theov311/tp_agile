@@ -114,5 +114,3 @@ Corriger les anomalies prioritaires avant d’ajouter des fonctionnalités :
    - Ajuster la vitesse selon la charge totale.  
 
 ---
-
-Un grand merci à tous pour votre engagement dans ce projet ! Ensemble, faisons de ce RPG une expérience inoubliable. 🎮✨
