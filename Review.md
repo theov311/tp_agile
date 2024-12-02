@@ -1,6 +1,6 @@
 Objectif: Divertir des joueurs avec un RPG automatique, lui permettant de choisir les paramètres des équipes qui s'affrontent
 
-Définition of Done Projet RPG : https://www.canva.com/design/DAGWj7DGYlI/lKhDWMzfCTTZfpBwUh-WIA/watch
+Définition of Done Projet RPG : https://www.canva.com/design/DAGWj7DGYlI/lKhDWMzfCTTZfpBwUh-WIA/view?utm_content=DAGWj7DGYlI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h140f5926d6
 
 SPRINT 1:
 
