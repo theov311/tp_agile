@@ -11,12 +11,9 @@ class Character:
         self.name = name
         self.speed = speed
         self.stamina_type = stamina_type
-        if stamina_type == 1:
-            self.hp = self.max_hp = 50
-        elif stamina_type == 2:
-            self.hp = self.max_hp = 75
-        else:
-            self.hp = self.max_hp = 100
+        self.stamina_type = stamina_type
+        self.hp = 100+(self.stamina_type*10)
+        self.max_hp = self.hp
 
     def is_alive(self):
         return self.hp > 0
