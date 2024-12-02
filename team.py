@@ -3,21 +3,18 @@ from character import Character
 
 class Team:
 
+    @staticmethod
     def create(team_name, size):
-        team = []
-        for i in range(size):
-            name = f"{team_name}_Player{i + 1}"
-            speed = random.randint(1, 10)
-            stamina_type = random.randint(0, 10)
-            team.append(Character(name, speed, stamina_type))
-        return team
+        """Crée une équipe de personnages avec un nom et une taille donnés."""
+        return [
+            Character(f"{team_name}_Player{i + 1}", random.randint(1, 10), random.randint(0, 10))
+            for i in range(size)
+        ]
 
-    def display(team1, team2):
-        print("\n--- Team 1 ---")
-        for char in team1:
-            print(char)
-        print("\n--- Team 2 ---")
-        for char in team2:
-            print(char)
-
-    
+    @staticmethod
+    def display(*teams):
+        """Affiche les informations de toutes les équipes données."""
+        for i, team in enumerate(teams, 1):
+            print(f"\n--- Team {i} ---")
+            for char in team:
+                print(char)
