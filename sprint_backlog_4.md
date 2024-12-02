@@ -1,6 +1,6 @@
 # Sprint Backlog 4 🏃‍♂️
 
-### Éléments du Product Backlog sélectionnés pour ce Sprint :summary: :
+### Éléments du Product Backlog sélectionnés pour ce Sprint 📑 :
 
 - Implémentation du système de "tank" pour chaque équipe
 - Finalisation du système d'équipement (armes et armures)
