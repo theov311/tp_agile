@@ -97,6 +97,21 @@ Tâche 1 : Ajouter un attribut d'endurance à la classe Personnage
 Tâche 2 : Développer une formule pour calculer les HP initiaux basés sur l'endurance
 Tâche 3 : Modifier la création des personnages pour intégrer l'endurance et les HP calculés
 
+SPRINT 4:
+Ajout d'un complément d'information pour le lancé de dé, le total du dé.
+
+Implémentation du système d'HP basé sur l'endurance
+Tâche 1 : Ajouter un attribut d'endurance à la classe Personnage
+Tâche 2 : Développer une formule pour calculer les HP initiaux basés sur l'endurance
+Tâche 3 : Modifier la création des personnages pour intégrer l'endurance et les HP calculés
+
+Implémentation du système de "tank" :
+Tâche 1 : Ajouter un attribut "isTank" aux personnages 
+Tâche 2 : Implémenter la logique pour désigner un tank par équipe au début du combat
+
+Ordre a suivre pour les attaquants : 
+Tâche 1 : Attaquer en priorité le tank de l'équipe adverseseul tant qu'il est en vie
+Tâche 2 : Attquer le joueur avec le moins de hp de l'équipe adverse
 
 
 Futur Développement:
@@ -118,8 +133,9 @@ Tâche 3 : Intégrer la force dans le système d'attaque
 
 Créer un système d'équipement :
 Tâche 1 : Implémenter des classes pour les armes et les armures
-Tâche 2 : Définir les attributs d'attaque pour les armes
-Tâche 3 : Définir les attributs de défense pour les armures
+Tâche 2 : Créer une variété d'armes avec différentes statistiques d'attaque
+Tâche 3 : Créer une variété d'armures avec différentes statistiques de défense 
+Tâche 4 : Implémenter un système pour équiper les personnages avec des armes et des armures
 
 Modifier le calcul de la vitesse des personnages :
 Tâche 1 : Prendre en compte le poids de l'équipement
