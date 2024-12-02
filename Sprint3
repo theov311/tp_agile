@@ -1,0 +1,15 @@
+Résoudre les anomalies et les bugs en prio
+
+Prévention des HP négatifs
+Tâche 1 : Ajouter une logique pour gérer les personnages avec 0 HP (hors combat)
+Tâche 2 : Afficher "mort" pour les personnages ayant atteint les 0hp
+
+Implémentation du système d'HP basé sur l'endurance
+Tâche 1 : Ajouter un attribut d'endurance à la classe Personnage
+Tâche 2 : Développer une formule pour calculer les HP initiaux basés sur l'endurance
+Tâche 3 : Modifier la création des personnages pour intégrer l'endurance et les HP calculés
+
+Système de dés pour actions aléatoires
+Tâche 1 : Créer une fonction de lancer de dés
+Tâche 2 : Remplacer le système aléatoire actuel par le système de dés
+Tâche 3 : Intégrer le système de dés dans les mécaniques de combat

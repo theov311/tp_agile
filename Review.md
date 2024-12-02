@@ -80,7 +80,9 @@ Tâche 3 : Ajouter une logique pour gérer les personnages avec 0 HP (hors comba
 
 
 
-
+SPRINT 3:
+Sprint Goal:
+Résoudre les bugs et les anomalies rencontrés dans le code en priorité. Avant de pouvoir implémenter de nouvelles features, principalement l'affichage "mort" lorsqu'un personnage passe à 0hp, implémenter un système d'endurance pour les personnages ou encore un systeme de lanc
 
 Futur Développement:
 Système de force et dégâts
