@@ -79,21 +79,13 @@ Tâche 2 : Implémenter une vérification des HP après chaque attaque X
 Tâche 3 : Ajouter une logique pour gérer les personnages avec 0 HP (hors combat) -
 
 
-
 SPRINT 3:
 Sprint Goal:
-Résoudre les bugs et les anomalies rencontrés dans le code en priorité. Avant de pouvoir implémenter de nouvelles features, principalement l'affichage "mort" lorsqu'un personnage passe à 0hp, implémenter un système d'endurance pour les personnages ou encore un systeme de lanc
+Résoudre les bugs et les anomalies rencontrés en priorité. Avant de pouvoir implémenter de nouvelles features, principalement l'affichage "est mort" lorsqu'un personnage passe à 0hp, implémenter un système d'endurance pour les personnages ou encore implémenter la logique de lancer de dés pour les attaques, dégâts, etc.
 
-Futur Développement:
-Système de force et dégâts
-Tâche 1 : Ajouter un attribut de force à la classe Personnage
-Tâche 2 : Créer un mécanisme de calcul des dégâts incluant la force
-Tâche 3 : Intégrer la force dans le système d'attaque
-
-Amélioration du système de ciblage
-Tâche 1 : Développer un algorithme de ciblage basé sur les HP les plus bas
-Tâche 2 : Implémenter une alternative au ciblage aléatoire
-Tâche 3 : Ajouter de la flexibilité dans le choix des cibles
+Prévention des HP négatifs
+Tâche 1 : Ajouter une logique pour gérer les personnages avec 0 HP (hors combat)
+Tâche 2 : Afficher "est mort" pour les personnages ayant atteint les 0hp
 
 Système de dés pour actions aléatoires
 Tâche 1 : Créer une fonction de lancer de dés
@@ -104,3 +96,25 @@ Préparation pour support multi-équipes
 Tâche 1 : Modifier la structure du jeu pour permettre plus de deux équipes
 Tâche 2 : Créer une classe ou une structure de gestion des équipes
 Tâche 3 : Adapter les mécaniques de tour et de combat pour multi-équipes
+
+
+Futur Développement:
+
+Amélioration du système de ciblage
+Tâche 1 : Développer un algorithme de ciblage basé sur les HP les plus bas
+Tâche 2 : Implémenter une alternative au ciblage aléatoire
+Tâche 3 : Ajouter de la flexibilité dans le choix des cibles
+
+Système de force et dégâts
+Tâche 1 : Ajouter un attribut de force à la classe Personnage
+Tâche 2 : Créer un mécanisme de calcul des dégâts incluant la force
+Tâche 3 : Intégrer la force dans le système d'attaque
+
+Créer un système d'équipement :
+Tâche 1 : Implémenter des classes pour les armes et les armures
+Tâche 2 : Définir les attributs d'attaque pour les armes
+Tâche 3 : Définir les attributs de défense pour les armures
+
+Modifier le calcul de la vitesse des personnages :
+Tâche 1 : Prendre en compte le poids de l'équipement
+Tâche 2 : Ajuster la vitesse en fonction de la charge totale
