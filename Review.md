@@ -1,115 +1,118 @@
-Objectif: Divertir des joueurs avec un RPG automatique, lui permettant de choisir les paramètres des équipes qui s'affrontent
+# **Revue du Projet RPG**  
 
-Définition of Done Projet RPG : https://www.canva.com/design/DAGWj7DGYlI/lKhDWMzfCTTZfpBwUh-WIA/view?utm_content=DAGWj7DGYlI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h140f5926d6
+## **Objectif**  
+Divertir des joueurs avec un RPG automatique, leur permettant de configurer des équipes qui s’affrontent dans des combats épiques.  
 
-SPRINT 1:
+👉 **Définition of Done** : [Consulter le document Canva](https://www.canva.com/design/DAGWj7DGYlI/lKhDWMzfCTTZfpBwUh-WIA/view?utm_content=DAGWj7DGYlI&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h140f5926d6)  
 
-Sprint Goal:
-Un RPG en console
-2 équipes de personnages
-Mécaniques de base de combat
-Tour par tour
-Système de HP
-Attaques aléatoires
-Ordre d’attaque basé sur la vitesse 
+---
 
-Développement: X fini - pas fini
+## **SPRINT 1 : Lancement du projet**  
 
-Créer la structure de base du jeu en console
-Tâche 1 : Mettre en place l'environnement de développement X
-Tâche 2 : Créer la boucle principale du jeu X
+### 🎯 **Sprint Goal**  
+- Créer un RPG jouable en console.  
+- Implémenter des fonctionnalités de base :  
+  - Deux équipes de personnages.  
+  - Système de combat tour par tour avec gestion des HP.  
+  - Attaques aléatoires et ordre d’attaque basé sur la vitesse.  
 
-Implémenter la création de deux équipes avec jusqu'à 10 personnages chacune
-Tâche 1 : Développer la classe Personnage X
-Tâche 2 : Créer la fonction de génération d'équipes X
+---
 
-Attribuer 100 HP à chaque personnage au début de la partie
-Tâche 1 : Ajouter l'attribut HP à la classe Personnage -
-Tâche 2 : Initialiser les HP lors de la création des personnages X
+### **Progrès du développement**  
 
-Implémenter le système de tour par tour basé sur le score de vitesse
-Tâche 1 : Ajouter l'attribut vitesse aux personnages X
-Tâche 2 : Développer la fonction de tri des personnages par vitesse X
-Tâche 3 : Implémenter la logique de tour par tour X
+#### **Création de la structure du jeu en console**  
+- **Tâche 1** : Mettre en place l’environnement de développement ✔️  
+- **Tâche 2** : Créer la boucle principale du jeu ✔️  
 
-Développer le système d'attaque avec dégâts aléatoires (0-10 HP)
-Tâche 1 : Créer la fonction d'attaque X
-Tâche 2 : Implémenter le calcul de dégâts aléatoires X
+#### **Création des équipes**  
+- **Tâche 1** : Développer la classe Personnage ✔️  
+- **Tâche 2** : Générer deux équipes de 10 personnages maximum ✔️  
 
-Ajouter la logique de fin de partie (tous les personnages d'une équipe à 0 HP)
-Tâche 1 : Développer la fonction de vérification de l'état de l'équipe X
-Tâche 2 : Implémenter la condition de fin de partie X
+#### **Gestion des HP des personnages**  
+- **Tâche 1** : Ajouter l’attribut HP à la classe Personnage ✔️  
+- **Tâche 2** : Initialiser les HP à 100 pour chaque personnage ✔️  
 
-Développer le système de ciblage aléatoire pour les attaques
-Tâche 1 : Créer la fonction de sélection aléatoire de cible X
-Tâche 2 : Intégrer le ciblage aléatoire dans la fonction d'attaque -
+#### **Combat tour par tour (basé sur la vitesse)**  
+- **Tâche 1** : Ajouter l’attribut vitesse aux personnages ✔️  
+- **Tâche 2** : Développer une fonction pour trier les personnages par vitesse ✔️  
+- **Tâche 3** : Implémenter la logique de combat tour par tour ✔️  
 
-Afficher les résultats de chaque tour et l'état du jeu
-Tâche 1 : Développer les fonctions d'affichage pour chaque action X
-Tâche 2 : Implémenter l'affichage de l'état du jeu après chaque tour X
+#### **Système d’attaque et de ciblage**  
+- **Tâche 1** : Créer une fonction d’attaque infligeant des dégâts aléatoires (0-10 HP) ✔️  
+- **Tâche 2** : Développer un système de ciblage aléatoire ❌  
 
+#### **Fin de partie et affichage**  
+- **Tâche 1** : Vérifier l’état des équipes pour détecter la fin de partie ✔️  
+- **Tâche 2** : Afficher les résultats de chaque tour et l’état du jeu ✔️  
 
-FeedBack Client:
-Améliorer le système de gestion des points de vie (HP) du RPG en console en intégrant un facteur d’endurance pour déterminer les HP initiaux des personnages.
-Assurer un affichage constant des HP à chaque étape du jeu et empêche que les HP descendent en dessous de zéro.
+---
 
+### 💬 **Feedback client**  
+Le client a proposé les améliorations suivantes :  
+- Intégrer un facteur d’endurance pour déterminer les HP initiaux des personnages.  
+- Afficher les HP à chaque étape du jeu.  
+- Empêcher les HP de descendre en dessous de zéro.  
 
-SPRINT 2:
-Sprint Goal:
-Améliorer le prototype du RPG en console en intégrant un système de combat plus détaillé et configurable.
-Ce sprint se concentrera sur l’affichage des HP à chaque étape.
-L’ajout d’un attribut de force pour influencer les dégâts.
-La diversification des HP initiaux basés sur l’endurance, l’implémentation d’un nouveau système de ciblage.
-Utilisation d’un système de dés pour les actions aléatoires.
-Nous préparons le terrain pour supporter plus de 2 équipes.
+---
 
-- Implémentation du système d'HP basé sur l'endurance
-- Affichage des HP à chaque étape
-- Prévention des HP négatifs
+## **SPRINT 2 : Améliorations prévues**  
 
+### 🎯 **Sprint Goal**  
+Rendre le système de combat plus détaillé et configurable :  
+- Système d’HP basé sur l’endurance.  
+- Affichage des HP à chaque étape.  
+- Prévention des HP négatifs.  
+- Introduction d’un système de dés pour les actions aléatoires.  
+- Préparer la structure pour supporter plus de deux équipes.  
 
-SPRINT 3:
-Sprint Goal:
-Résoudre les bugs et les anomalies rencontrés en priorité. Avant de pouvoir implémenter de nouvelles features, principalement l'affichage "est mort" lorsqu'un personnage passe à 0hp, implémenter un système d'endurance pour les personnages ou encore implémenter la logique de lancer de dés pour les attaques, dégâts, etc.
+---
 
-- Prévention des HP négatifs
-- Implémentation d'une logique de lancer de dés pour les attaques, dégâts, etc.
-- Implémentation du système d'HP basé sur l'endurance
+## **SPRINT 3 : Résolution de bugs et nouvelles mécaniques**  
 
-SPRINT 4:
-- Ajout d'un complément d'information pour le lancé de dé, le total du dé
-- Implémentation du système d'HP basé sur l'endurance
-- Implémentation du système de "tank"
-- Ordre a suivre pour les attaquants
+### 🎯 **Sprint Goal**  
+Corriger les anomalies prioritaires avant d’ajouter des fonctionnalités :  
+- Indiquer lorsqu’un personnage passe à 0 HP (« est mort »).  
+- Ajouter la logique de lancer de dés pour les attaques et dégâts.  
+- Finaliser le système d’HP basé sur l’endurance.  
 
-SPRINT 5:
-- Amélioration endurance (stamina)
-- Amélioration système tank
-- Review de code, amélioration
+---
 
-Futur Développement:
+## **SPRINTS FUTURS : Ce qui nous attend**  
 
-Préparation pour support multi-équipes
-Tâche 1 : Modifier la structure du jeu pour permettre plus de deux équipes
-Tâche 2 : Créer une classe ou une structure de gestion des équipes
-Tâche 3 : Adapter les mécaniques de tour et de combat pour multi-équipes
+### 🌟 **Sprint 4**  
+- Ajouter un complément d’information pour le lancer de dés (afficher le total).  
+- Introduire un système de « tank » (personnage résistant en première ligne).  
+- Réviser l’ordre des attaquants.  
 
-Amélioration du système de ciblage
-Tâche 1 : Développer un algorithme de ciblage basé sur les HP les plus bas
-Tâche 2 : Implémenter une alternative au ciblage aléatoire
-Tâche 3 : Ajouter de la flexibilité dans le choix des cibles
+### 🌟 **Sprint 5**  
+- Améliorer l’attribut d’endurance (stamina).  
+- Optimiser le système de tank.  
+- Effectuer une review de code pour améliorer la structure existante.  
 
-Système de force et dégâts
-Tâche 1 : Ajouter un attribut de force à la classe Personnage
-Tâche 2 : Créer un mécanisme de calcul des dégâts incluant la force
-Tâche 3 : Intégrer la force dans le système d'attaque
+---
 
-Créer un système d'équipement :
-Tâche 1 : Implémenter des classes pour les armes et les armures
-Tâche 2 : Créer une variété d'armes avec différentes statistiques d'attaque
-Tâche 3 : Créer une variété d'armures avec différentes statistiques de défense 
-Tâche 4 : Implémenter un système pour équiper les personnages avec des armes et des armures
+## **Futurs développements envisagés**  
 
-Modifier le calcul de la vitesse des personnages :
-Tâche 1 : Prendre en compte le poids de l'équipement
-Tâche 2 : Ajuster la vitesse en fonction de la charge totale
+1. **Support multi-équipes**  
+   - Permettre à plus de deux équipes de s’affronter.  
+   - Adapter les mécaniques de tour et de combat.  
+
+2. **Système de ciblage stratégique**  
+   - Prioriser les cibles avec les HP les plus bas.  
+   - Ajouter de la flexibilité dans le choix des cibles.  
+
+3. **Ajout d’attributs influents**  
+   - Introduire un attribut de force pour calculer les dégâts.  
+   - Diversifier les HP initiaux selon les attributs.  
+
+4. **Système d’équipement**  
+   - Créer des armes et armures modifiant les statistiques des personnages.  
+   - Intégrer un système d’équipement au gameplay.  
+
+5. **Calcul avancé de la vitesse**  
+   - Prendre en compte le poids de l’équipement.  
+   - Ajuster la vitesse selon la charge totale.  
+
+---
+
+Un grand merci à tous pour votre engagement dans ce projet ! Ensemble, faisons de ce RPG une expérience inoubliable. 🎮✨
