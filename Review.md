@@ -64,19 +64,19 @@ Nous préparons le terrain pour supporter plus de 2 équipes.
 Développement: X fini - pas fini
 
 Implémentation du système d'HP basé sur l'endurance
-Tâche 1 : Ajouter un attribut d'endurance à la classe Personnage
-Tâche 2 : Développer une formule pour calculer les HP initiaux basés sur l'endurance
-Tâche 3 : Modifier la création des personnages pour intégrer l'endurance et les HP calculés
+Tâche 1 : Ajouter un attribut d'endurance à la classe Personnage -
+Tâche 2 : Développer une formule pour calculer les HP initiaux basés sur l'endurance -
+Tâche 3 : Modifier la création des personnages pour intégrer l'endurance et les HP calculés -
 
 Affichage des HP à chaque étape
-Tâche 1 : Créer une fonction d'affichage des HP pour chaque personnage
-Tâche 2 : Intégrer l'affichage des HP après chaque action dans le tour de jeu
-Tâche 3 : Formater l'affichage pour une meilleure lisibilité
+Tâche 1 : Créer une fonction d'affichage des HP pour chaque personnage X
+Tâche 2 : Intégrer l'affichage des HP après chaque action dans le tour de jeu X
+Tâche 3 : Formater l'affichage pour une meilleure lisibilité X
 
 Prévention des HP négatifs
-Tâche 1 : Modifier la fonction de calcul des dégâts pour empêcher les HP de descendre en dessous de zéro
-Tâche 2 : Implémenter une vérification des HP après chaque attaque
-Tâche 3 : Ajouter une logique pour gérer les personnages avec 0 HP (hors combat)
+Tâche 1 : Modifier la fonction de calcul des dégâts pour empêcher les HP de descendre en dessous de zéro X
+Tâche 2 : Implémenter une vérification des HP après chaque attaque X
+Tâche 3 : Ajouter une logique pour gérer les personnages avec 0 HP (hors combat) -
 
 
 
