@@ -87,18 +87,24 @@ Prévention des HP négatifs
 Tâche 1 : Ajouter une logique pour gérer les personnages avec 0 HP (hors combat)
 Tâche 2 : Afficher "est mort" pour les personnages ayant atteint les 0hp
 
-Système de dés pour actions aléatoires
+Implémentation d'une logique de lancer de dés pour les attaques, dégâts, etc.
 Tâche 1 : Créer une fonction de lancer de dés
 Tâche 2 : Remplacer le système aléatoire actuel par le système de dés
 Tâche 3 : Intégrer le système de dés dans les mécaniques de combat
+
+Implémentation du système d'HP basé sur l'endurance
+Tâche 1 : Ajouter un attribut d'endurance à la classe Personnage
+Tâche 2 : Développer une formule pour calculer les HP initiaux basés sur l'endurance
+Tâche 3 : Modifier la création des personnages pour intégrer l'endurance et les HP calculés
+
+
+
+Futur Développement:
 
 Préparation pour support multi-équipes
 Tâche 1 : Modifier la structure du jeu pour permettre plus de deux équipes
 Tâche 2 : Créer une classe ou une structure de gestion des équipes
 Tâche 3 : Adapter les mécaniques de tour et de combat pour multi-équipes
-
-
-Futur Développement:
 
 Amélioration du système de ciblage
 Tâche 1 : Développer un algorithme de ciblage basé sur les HP les plus bas
