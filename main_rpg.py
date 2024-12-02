@@ -1,10 +1,16 @@
 import random
 
 class Character:
-    def __init__(self, name, speed):
+    def __init__(self, name, speed, stamina_type):
         self.name = name
-        self.hp = 100
         self.speed = speed
+        self.stamina_type = stamina_type
+        if stamina_type == 1:
+            self.hp = 50
+        elif stamina_type == 2:
+            self.hp = 75
+        else:
+            self.hp = 100
 
     def is_alive(self):
         return self.hp > 0
@@ -17,7 +23,7 @@ class Character:
 
     def __str__(self):
         hp_display = "is dead" if self.hp == 0 else f"HP: {self.hp}"
-        return f"{self.name} ({hp_display}, Speed: {self.speed})"
+        return f"{self.name} ({hp_display}, Speed: {self.speed}, Stamina Type: {self.stamina_type})"
 
 
 def create_team(team_name, size):
@@ -25,7 +31,8 @@ def create_team(team_name, size):
     for i in range(size):
         name = f"{team_name}_Player{i+1}"
         speed = random.randint(1, 10)
-        team.append(Character(name, speed))
+        stamina_type = random.randint(1, 3)
+        team.append(Character(name, speed, stamina_type))
     return team
 
 def display_teams(team1, team2):
@@ -41,7 +48,7 @@ def battle_turn(attacker, target):
         return None
 
     dice_result = random.randint(1, 10)  # Simule le lancer de dés
-    result = f"Dice Result: {dice_result}\n"  # Ajoute le résultat du dé au début
+    result = f"Dice Result: {dice_result}/10\n"  # Ajoute le résultat du dé au début
 
     if dice_result == 1:  # Fumble
         damage = 10
@@ -91,7 +98,7 @@ def play_game(team1, team2):
         if attacker is None:
             break
 
-        target_team = team2 if attacker in team1 else team1
+        target_team = team2 if attacker in team1 else team1 
         alive_targets = [char for char in target_team if char.is_alive()]
         if not alive_targets:
             break
