@@ -33,7 +33,7 @@ def create_team(team_name, size):
     for i in range(size):
         name = f"{team_name}_Player{i+1}"
         speed = random.randint(1, 10)
-        stamina_type = random.randint(1, 3)
+        stamina_type = random.randint(1, 10)
         team.append(Character(name, speed, stamina_type))
     return team
 
