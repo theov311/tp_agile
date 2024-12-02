@@ -40,29 +40,40 @@ def battle_turn(attacker, target):
     if not attacker.is_alive() or not target.is_alive():
         return None
 
-    damage = random.randint(1, 10)
-    critical_hit = random.random() < 0.05
-    fumble = random.random() < 0.05
+    dice_result = random.randint(1, 10)  # Simule le lancer de dés
+    result = f"Dice Result: {dice_result}\n"  # Ajoute le résultat du dé au début
 
-    if critical_hit:
-        damage = 20
-        target.hp -= damage
-        result = f"💥 Critical hit! {attacker.name} deals {damage} damage to {target.name}!"
-    elif fumble:
+    if dice_result == 1:  # Fumble
         damage = 10
         attacker.hp -= damage
-        result = f"😱 Fumble! {attacker.name} accidentally deals {damage} damage to themselves!"
-    else:
+        result += f"😱 Fumble! {attacker.name} accidentally deals {damage} damage to themselves!"
+        if attacker.is_dead():
+            result += f"\n💀 {attacker.name} is dead due to a fumble!"
+        # Pas d'affichage des HP de la cible lors du fumble
+    elif dice_result == 10:  # Critical hit
+        damage = 20
         target.hp -= damage
-        result = f"{attacker.name} attacks {target.name} for {damage} damage!"
+        result += f"💥 Critical hit! {attacker.name} deals {damage} damage to {target.name}!"
+        if target.is_dead():
+            result += f"\n💀 {target.name} is dead!"
+    else:  # Normal attack
+        damage = dice_result
+        target.hp -= damage
+        result += f"{attacker.name} attacks {target.name} for {damage} damage!"
+        if target.is_dead():
+            result += f"\n💀 {target.name} is dead!"
 
+    # Assure que les HP ne descendent pas en dessous de 0
     target.hp = max(0, target.hp)
     attacker.hp = max(0, attacker.hp)
 
-    if target.is_dead() or attacker.is_dead(): 
-        result += f"\n💀 {target.name} is dead!"
+    # Affiche les HP seulement si ce n'est pas un fumble
+    if dice_result != 1:  # Éviter d'afficher les HP de la cible lors d'un fumble
+        if target.hp > 0:
+            result += f"\n{target.name} now has: {target.hp} HP"
+    if attacker.hp > 0:
+        result += f"\n{attacker.name} now has: {attacker.hp} HP"
 
-    result += f"\n{target.name} now has: {target.hp} HP" if target.is_alive() else ""
     return result
 
 def play_game(team1, team2):
