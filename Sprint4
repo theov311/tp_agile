@@ -1,6 +1,6 @@
 Ajout d'un complément d'information pour le lancé de dé, le total du dé.
 
-Implémentation du système d'HP basé sur l'endurance
+Implémentation du système d'HP basé sur l'endurance :
 Tâche 1 : Ajouter un attribut d'endurance à la classe Personnage
 Tâche 2 : Développer une formule pour calculer les HP initiaux basés sur l'endurance
 Tâche 3 : Modifier la création des personnages pour intégrer l'endurance et les HP calculés
@@ -10,5 +10,5 @@ Tâche 1 : Ajouter un attribut "isTank" aux personnages
 Tâche 2 : Implémenter la logique pour désigner un tank par équipe au début du combat
 
 Ordre a suivre pour les attaquants : 
-Tâche 1 : Attaquer en priorité le tank de l'équipe adverseseul tant qu'il est en vie
+Tâche 1 : Attaquer en priorité le tank de l'équipe adverse tant qu'il est en vie
 Tâche 2 : Attquer le joueur avec le moins de hp de l'équipe adverse

@@ -1,0 +1,7 @@
+Amélioration endurance :
+Modification de l'endurance par rapport aux points définis par un random entre 1 et 100. Chaque point de "stamina" ajoute une tranche de 10hp au joueur.
+
+Amélioration système tank :
+Permettre de choisir directement dans le main le joueur de chaque équipe qui sera le tank
+
+Review de code, amélioration

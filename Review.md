@@ -63,58 +63,29 @@ La diversification des HP initiaux basés sur l’endurance, l’implémentation
 Utilisation d’un système de dés pour les actions aléatoires.
 Nous préparons le terrain pour supporter plus de 2 équipes.
 
-Développement: X fini - pas fini
-
-Implémentation du système d'HP basé sur l'endurance
-Tâche 1 : Ajouter un attribut d'endurance à la classe Personnage -
-Tâche 2 : Développer une formule pour calculer les HP initiaux basés sur l'endurance -
-Tâche 3 : Modifier la création des personnages pour intégrer l'endurance et les HP calculés -
-
-Affichage des HP à chaque étape
-Tâche 1 : Créer une fonction d'affichage des HP pour chaque personnage X
-Tâche 2 : Intégrer l'affichage des HP après chaque action dans le tour de jeu X
-Tâche 3 : Formater l'affichage pour une meilleure lisibilité X
-
-Prévention des HP négatifs
-Tâche 1 : Modifier la fonction de calcul des dégâts pour empêcher les HP de descendre en dessous de zéro X
-Tâche 2 : Implémenter une vérification des HP après chaque attaque X
-Tâche 3 : Ajouter une logique pour gérer les personnages avec 0 HP (hors combat) -
+- Implémentation du système d'HP basé sur l'endurance
+- Affichage des HP à chaque étape
+- Prévention des HP négatifs
 
 
 SPRINT 3:
 Sprint Goal:
 Résoudre les bugs et les anomalies rencontrés en priorité. Avant de pouvoir implémenter de nouvelles features, principalement l'affichage "est mort" lorsqu'un personnage passe à 0hp, implémenter un système d'endurance pour les personnages ou encore implémenter la logique de lancer de dés pour les attaques, dégâts, etc.
 
-Prévention des HP négatifs
-Tâche 1 : Ajouter une logique pour gérer les personnages avec 0 HP (hors combat)
-Tâche 2 : Afficher "est mort" pour les personnages ayant atteint les 0hp
-
-Implémentation d'une logique de lancer de dés pour les attaques, dégâts, etc.
-Tâche 1 : Créer une fonction de lancer de dés
-Tâche 2 : Remplacer le système aléatoire actuel par le système de dés
-Tâche 3 : Intégrer le système de dés dans les mécaniques de combat
-
-Implémentation du système d'HP basé sur l'endurance
-Tâche 1 : Ajouter un attribut d'endurance à la classe Personnage
-Tâche 2 : Développer une formule pour calculer les HP initiaux basés sur l'endurance
-Tâche 3 : Modifier la création des personnages pour intégrer l'endurance et les HP calculés
+- Prévention des HP négatifs
+- Implémentation d'une logique de lancer de dés pour les attaques, dégâts, etc.
+- Implémentation du système d'HP basé sur l'endurance
 
 SPRINT 4:
-Ajout d'un complément d'information pour le lancé de dé, le total du dé.
+- Ajout d'un complément d'information pour le lancé de dé, le total du dé
+- Implémentation du système d'HP basé sur l'endurance
+- Implémentation du système de "tank"
+- Ordre a suivre pour les attaquants
 
-Implémentation du système d'HP basé sur l'endurance
-Tâche 1 : Ajouter un attribut d'endurance à la classe Personnage
-Tâche 2 : Développer une formule pour calculer les HP initiaux basés sur l'endurance
-Tâche 3 : Modifier la création des personnages pour intégrer l'endurance et les HP calculés
-
-Implémentation du système de "tank" :
-Tâche 1 : Ajouter un attribut "isTank" aux personnages 
-Tâche 2 : Implémenter la logique pour désigner un tank par équipe au début du combat
-
-Ordre a suivre pour les attaquants : 
-Tâche 1 : Attaquer en priorité le tank de l'équipe adverseseul tant qu'il est en vie
-Tâche 2 : Attquer le joueur avec le moins de hp de l'équipe adverse
-
+SPRINT 5:
+- Amélioration endurance (stamina)
+- Amélioration système tank
+- Review de code, amélioration
 
 Futur Développement:
 
