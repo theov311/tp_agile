@@ -88,6 +88,7 @@ def play_game(team1, team2):
     log = []
     rounds = 0
 
+    # Combine and sort all characters by speed
     all_characters = sorted(team1 + team2, key=lambda c: c.speed, reverse=True)
 
     while any(char.is_alive() for char in team1) and any(char.is_alive() for char in team2):
@@ -98,17 +99,27 @@ def play_game(team1, team2):
         if attacker is None:
             break
 
-        target_team = team2 if attacker in team1 else team1 
+        # Determine the target team
+        target_team = team2 if attacker in team1 else team1
         alive_targets = [char for char in target_team if char.is_alive()]
+
         if not alive_targets:
             break
 
-        target = random.choice(alive_targets)
+        # Check if the highest stamina target is still alive
+        highest_stamina_target = max(alive_targets, key=lambda c: c.stamina_type, default=None)
+        if highest_stamina_target and highest_stamina_target.is_alive():
+            target = highest_stamina_target
+        else:
+            # If the tank is dead, attack the character with the lowest HP
+            target = min(alive_targets, key=lambda c: c.hp)
 
+        # Execute the attack
         result = battle_turn(attacker, target)
         if result:
             log.append(result)
 
+        # Check win condition
         if not any(char.is_alive() for char in team1):
             log.append("\n--- Team 2 Wins! ---")
             return log, rounds
@@ -116,9 +127,11 @@ def play_game(team1, team2):
             log.append("\n--- Team 1 Wins! ---")
             return log, rounds
 
+        # Rotate the character list for the next turn
         all_characters = all_characters[1:] + [all_characters[0]]
 
     return log, rounds
+
 
 if __name__ == "__main__":
     print("Welcome to the RPG Battle Simulator!")
