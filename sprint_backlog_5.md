@@ -1,4 +1,4 @@
-# Sprint Backlog
+# Sprint Backlog 🤚
 
 Implémentation du dépassement des 100 HP
 - Modifier la logique pour permettre aux personnages d'avoir plus de 100 HP
@@ -18,7 +18,7 @@ Tests et équilibrage
 - Vérifier que les changements n'ont pas introduit de nouveaux bugs
 - Ajuster les valeurs si nécessaire pour maintenir l'équilibre du jeu
 
-### Critères de Validation :
+### Critères de Validation 🍮:
 
 -Les personnages peuvent dépasser 100 HP sans problème
 -Le système de tank fonctionne de manière équilibrée et ajoute de la profondeur stratégique au jeu
