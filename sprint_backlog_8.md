@@ -1,6 +1,6 @@
 # Sprint Backlog 8 :
 
-``md
+```md
     - Implémenter le choix du nombre de joueurs via prompt
 
     - Finaliser l'adaptation du système d'attaque pour les armes
