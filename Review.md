@@ -77,21 +77,21 @@ Corriger les anomalies prioritaires avant d’ajouter des fonctionnalités :
 
 ---
 
-## 🎯🛡️ **Sprint 4**  
+## 🎯🛡️ **SPRINT 4**  
 - Ajouter un complément d’information pour le lancer de dés (afficher le total). ✔️
 - Introduire un système de « tank » (personnage résistant en première ligne). ✔️
 - Réviser l’ordre des attaquants.  ✔️
 
 ---
 
-## 🎯💪 **Sprint 5**  
+## 🎯💪 **SPRINT 5**  
 - Améliorer l’attribut d’endurance (stamina). ✔️
 - Optimiser le système de tank. ✔️
 - Effectuer une review de code pour améliorer la structure existante. ✔️
 
 ---
 
-## 🎯⚔️ **Sprint 6 - Evalué**
+## 🎯⚔️ **SPRINT 6 - Evalué**
 - Implémenter les armes pour des attaques plus diversifé.
 
 ---
