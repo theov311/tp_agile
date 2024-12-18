@@ -100,11 +100,17 @@ Suite à une nouvelle demande du client, le projet doit être adapté pour répo
    - Permettre à l'utilisateur de choisir le nom des équipes au début de la partie.
 
 Pour mieux organiser ces nouvelles priorités tout en conservant la vision initiale, un nouveau sprint a été créé afin de prendre en compte ces éléments tout en maintenant l'équilibre du développement global.
+Nous reportons donc le Sprint 6 vers le Sprint 8, une fois les priorités clients du Sprint 7 terminées.
 
 ---
 
 ## 🎯⚔️ **SPRINT 7 - Evalué**
 - Ajouter des fonctionnalités permettant la personnalisation et la configuration du jeu en mode console
+
+---
+
+## 🎯⚔️ **SPRINT 8 - Evalué**
+- Finir/Adapté les fonctionnalités du Sprint 6 (mode console) avec les nouvelles priorités client
 
 ---
 
