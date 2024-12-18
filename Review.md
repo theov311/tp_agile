@@ -110,7 +110,7 @@ Nous reportons donc le Sprint 6 vers le Sprint 8, une fois les priorités client
 ---
 
 ## 🎯⚔️ **SPRINT 8 - Evalué**
-- Finir/Adapté les fonctionnalités du Sprint 6 (mode console) avec les nouvelles priorités client
+- Finir/Adapté les fonctionnalités du Sprint 6 (mode console) avec les nouvelles priorités client (les finirs en priorité si ce n'est pas le cas)
 
 ---
 
