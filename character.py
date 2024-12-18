@@ -1,14 +1,18 @@
 from hp_bar import Hp_bar
+import random
+from weapon import Weapon
 
 class Character:
     
-    def __init__(self, name, speed, stamina_type):
+    def __init__(self, name, speed, stamina_type, weapon: Weapon):
         """Initialise un personnage avec un nom, une vitesse, et un type d'endurance."""
         self.name = name
         self.speed = speed
         self.stamina_type = stamina_type
         self.hp = self.calculate_hp()
         self.max_hp = self.hp
+        self.weapon = weapon
+
 
     def calculate_hp(self):
         """Calcule la vie du personnage basée sur son endurance."""
@@ -28,4 +32,5 @@ class Character:
     def __str__(self):
         """Renvoie une chaîne de caractères représentant le personnage."""
         hp_display = "is dead" if self.hp == 0 else f"{Hp_bar.draw(self.hp, self.max_hp)} HP"
-        return f"{self.name} ({hp_display}, Speed: {self.speed}, Stamina: {self.stamina_type})"
+        return f"{self.name} ({hp_display}, Speed: {self.speed}, Stamina: {self.stamina_type}, Weapon: {self.weapon.name})"
+
