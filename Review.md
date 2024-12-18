@@ -95,9 +95,16 @@ Corriger les anomalies prioritaires avant d’ajouter des fonctionnalités :
 - Implémenter les armes pour des attaques plus diversifé.
 
 ### 💬 **Changement de priorité par le client**
-- Adapter le jeux pour s'adapter à un grand public => configuration de la partie en mode console.
+Suite à une nouvelle demande du client, le projet doit être adapté pour répondre à un public plus large en offrant davantage de personnalisation lors du lancement de la partie en mode console :
    - Permettre à l'utilisateur de choisir le nom des joueurs au début de la partie.
-   - Permettre à l'utilisateur de choisir le nom des teams au début de la partie.
+   - Permettre à l'utilisateur de choisir le nom des équipes au début de la partie.
+
+Pour mieux organiser ces nouvelles priorités tout en conservant la vision initiale, un nouveau sprint a été créé afin de prendre en compte ces éléments tout en maintenant l'équilibre du développement global.
+
+---
+
+## 🎯⚔️ **SPRINT 7 - Evalué**
+- Ajouter des fonctionnalités permettant la personnalisation et la configuration du jeu en mode console
 
 ---
 
