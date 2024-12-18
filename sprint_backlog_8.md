@@ -1,4 +1,4 @@
-# Sprint Backlog 8 :
+# Sprint Backlog 8 : :bookmark:
 
 ```md
     - Implémenter le choix du nombre de joueurs via prompt
