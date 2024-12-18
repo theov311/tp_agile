@@ -1,0 +1,5 @@
+Implémenter les armes pour des attaques plus diversifé:
+Tâche 1: Ajouter une classe pour définir les différentes armes (Weapon)
+Tâche 2: Créer/Définir des instances de la classe Weapon pour chaque type d'arme
+Tâche 3: Ajouter l'affichage "attaque armée" ou "attaque à mains nues" dans la console lors du combat
+=> Vérifier le bon fonctionnement des nouvelles fonctionnalités & corriger les éventuels bugs

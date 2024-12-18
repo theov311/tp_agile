@@ -87,7 +87,10 @@ Corriger les anomalies prioritaires avant d’ajouter des fonctionnalités :
 ### 🌟 **Sprint 5**  
 - Améliorer l’attribut d’endurance (stamina).  
 - Optimiser le système de tank.  
-- Effectuer une review de code pour améliorer la structure existante.  
+- Effectuer une review de code pour améliorer la structure existante.
+
+### 🌟 **Sprint 6 - Evalué**
+- Implémenter les armes pour des attaques plus diversifé.
 
 ---
 
