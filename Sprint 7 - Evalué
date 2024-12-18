@@ -1,5 +1,6 @@
 🎯⚔️ Ajouter des fonctionnalités permettant la personnalisation et la configuration du jeu en mode console : 
 
-Tâche 1: Ajouter une étape au lancement pour entrer les noms des joueurs.
-Tâche 2: Ajouter une étape pour définir les noms des équipes.
-Tâche 3: Adapter l'affichage en conséquence avec les nouveaux noms personnalisés.
+Tâche 1: Ajouter une étape pour définir le nombre de joueurs par l'utilisateur dans la console.
+Tâche 2: Ajouter une étape au lancement pour entrer les noms des joueurs.
+Tâche 3: Ajouter une étape pour définir les noms des équipes.
+Tâche 4: Adapter l'affichage en conséquence avec les nouveaux noms personnalisés.
