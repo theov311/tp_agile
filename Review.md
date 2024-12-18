@@ -9,7 +9,7 @@ Divertir des joueurs avec un RPG automatique, leur permettant de configurer des 
 
 ## **SPRINT 1 : Lancement du projet**  
 
-### 🎯 **Sprint Goal**  
+### 🎯🎲 **Sprint Goal**  
 - Créer un RPG jouable en console.  
 - Implémenter des fonctionnalités de base :  
   - Deux équipes de personnages.  
@@ -57,39 +57,41 @@ Le client a proposé les améliorations suivantes :
 
 ## **SPRINT 2 : Améliorations prévues**  
 
-### 🎯 **Sprint Goal**  
+### 🎯🎲 **Sprint Goal**  
 Rendre le système de combat plus détaillé et configurable :  
-- Système d’HP basé sur l’endurance.  
-- Affichage des HP à chaque étape.  
-- Prévention des HP négatifs.  
-- Introduction d’un système de dés pour les actions aléatoires.  
-- Préparer la structure pour supporter plus de deux équipes.  
+- Système d’HP basé sur l’endurance. ❌
+- Affichage des HP à chaque étape.  ✔️
+- Prévention des HP négatifs.  ❌
+- Introduction d’un système de dés pour les actions aléatoires.  ✔️
+- Préparer la structure pour supporter plus de deux équipes.  ✔️
 
 ---
 
 ## **SPRINT 3 : Résolution de bugs et nouvelles mécaniques**  
 
-### 🎯 **Sprint Goal**  
+### 🎯☠️ **Sprint Goal**  
 Corriger les anomalies prioritaires avant d’ajouter des fonctionnalités :  
-- Indiquer lorsqu’un personnage passe à 0 HP (« est mort »).  
-- Ajouter la logique de lancer de dés pour les attaques et dégâts.  
-- Finaliser le système d’HP basé sur l’endurance.  
+- Indiquer lorsqu’un personnage passe à 0 HP (« est mort »).  ✔️
+- Ajouter la logique de lancer de dés pour les attaques et dégâts.  ✔️
+- Finaliser le système d’HP basé sur l’endurance.  ✔️
 
 ---
 
-## **SPRINTS FUTURS : Ce qui nous attend**  
+## 🎯🛡️ **Sprint 4**  
+- Ajouter un complément d’information pour le lancer de dés (afficher le total). ✔️
+- Introduire un système de « tank » (personnage résistant en première ligne). ✔️
+- Réviser l’ordre des attaquants.  ✔️
 
-### 🌟 **Sprint 4**  
-- Ajouter un complément d’information pour le lancer de dés (afficher le total).  
-- Introduire un système de « tank » (personnage résistant en première ligne).  
-- Réviser l’ordre des attaquants.  
+---
 
-### 🌟 **Sprint 5**  
-- Améliorer l’attribut d’endurance (stamina).  
-- Optimiser le système de tank.  
-- Effectuer une review de code pour améliorer la structure existante.
+## 🎯💪 **Sprint 5**  
+- Améliorer l’attribut d’endurance (stamina). ✔️
+- Optimiser le système de tank. ✔️
+- Effectuer une review de code pour améliorer la structure existante. ✔️
 
-### 🌟 **Sprint 6 - Evalué**
+---
+
+## 🎯⚔️ **Sprint 6 - Evalué**
 - Implémenter les armes pour des attaques plus diversifé.
 
 ---
