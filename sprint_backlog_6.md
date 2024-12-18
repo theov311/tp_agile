@@ -1,13 +1,15 @@
 # Sprint Backlog 6 :card_index:
 
-    - Créer une classe Weapon
+```md
+    - ###Créer une classe Weapon
 
-    - Définir les instances d'armes
+    - ###Définir les instances d'armes
 
-    - Intégrer les armes aux personnages
+    - ###Intégrer les armes aux personnages
 
-    - Adapter le système d'attaque
+    - ###Adapter le système d'attaque
 
-    - Mettre à jour l'affichage console
+    - ###Mettre à jour l'affichage console
 
-    - Tester et déboguer
+    - ###Tester et déboguer
+```
