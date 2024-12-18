@@ -94,6 +94,11 @@ Corriger les anomalies prioritaires avant d’ajouter des fonctionnalités :
 ## 🎯⚔️ **SPRINT 6 - Evalué**
 - Implémenter les armes pour des attaques plus diversifé.
 
+### 💬 **Changement de priorité par le client**
+- Adapter le jeux pour s'adapter à un grand public => configuration de la partie en mode console.
+   - Permettre à l'utilisateur de choisir le nom des joueurs au début de la partie.
+   - Permettre à l'utilisateur de choisir le nom des teams au début de la partie.
+
 ---
 
 ## **Futurs développements envisagés**  
